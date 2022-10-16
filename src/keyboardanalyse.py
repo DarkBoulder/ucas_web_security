@@ -88,5 +88,5 @@ def AnalyseAndSave_csdn(path, savepath, dataname):
 
 
 def KeyboardAnalyse(path, savepath):
-    AnalyseAndSave_csdn(path, savepath, 'yahoo')
+    AnalyseAndSave_yahoo(path, savepath, 'yahoo')
     AnalyseAndSave_csdn(path, savepath, 'csdn')
