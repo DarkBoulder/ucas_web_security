@@ -89,6 +89,6 @@ def pcfgAnalyse(path, savepath, dataname):
 
 
 def pcfgGenerate(path, savepath):
-    # pcfgAnalyse(path, savepath, 'yahoo')
+    pcfgAnalyse(path, savepath, 'yahoo')
     pcfgAnalyse(path, savepath, 'csdn')
 

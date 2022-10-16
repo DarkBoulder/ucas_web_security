@@ -1,5 +1,4 @@
 import csv
-from .datavis import DrawBarChart
 
 
 def AnalyseAndSave(path, savepath, dataname):
@@ -14,9 +13,6 @@ def AnalyseAndSave(path, savepath, dataname):
         for ele in sorted_dict:
             csv_writer.writerow([ele[0], ele[1]])
     print('口令长度分析_{}.csv generated.'.format(dataname))
-    # x = [x[0] for x in sorted_dict]
-    # y = [x[1] for x in sorted_dict]
-    # DrawBarChart(x, y, '口令长度', '出现次数', dataname + '口令长度分析', savepath + '口令长度分析_{}.png'.format(dataname))
 
 
 def LengthAnalyse(path, savepath):
