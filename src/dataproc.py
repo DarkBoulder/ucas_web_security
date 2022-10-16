@@ -9,7 +9,7 @@ def DataProcess(path):
     """
 
     with open(path + 'plaintxt_yahoo.txt', 'r', encoding='utf8') as f1, \
-            open(path + 'yahoo.csv', 'w', encoding='utf8', newline='') as f2:
+            open(path + 'yahoo.csv', 'w', encoding='utf-8-sig', newline='') as f2:
         csv_writer = csv.writer(f2)
         cur_line_num = 0
         first_line_num = 3073
@@ -21,7 +21,7 @@ def DataProcess(path):
                     csv_writer.writerow([line_data[2]])
     print('Yahoo data processed!')
     with open(path + 'www.csdn.net.sql', 'r', encoding='utf8') as f1, \
-            open(path + 'csdn.csv', 'w', encoding='utf8', newline='') as f2:
+            open(path + 'csdn.csv', 'w', encoding='utf-8-sig', newline='') as f2:
         csv_writer = csv.writer(f2)
         for line in f1.readlines():
             csv_writer.writerow([line.strip().split('#')[1].strip()])
